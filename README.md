@@ -6,6 +6,7 @@ The focus areas are broken down as follows:
 
 - ML: Basic "from Scratch" and modified ML Algos
 - Visualization: D3.js
-- Server: Backend Web (node.js/express)
+- Server: Backend Web node.js/express
+- API : devleoping API based on https://swagger.io/specification/ standard
 
 
