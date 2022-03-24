@@ -22,9 +22,9 @@ We will be loking at the BTC (Bitcoin) to US Dollar index Bid/Ask by sending the
 This will return a JSON object with the following information:
 
 {
-  "time": <  positive integer: 	The UTC time of the server in milliseconds>,
-  "feed": < string: 	The subscribed feed>,
-  "product_id": < string: The subscribed product (referred also as instrument or symbol)>,
+  "time": <  positive integer: 	The UTC time of the server in milliseconds>,  
+  "feed": < string: 	The subscribed feed>,  
+  "product_id": < string: The subscribed product (referred also as instrument or symbol)>,  
   "bid": <  positive float: 	The price of the current best bid>,
   "ask": <positive float 	: The price of the current best ask >,
   "bid_size": < positive float : The size of the current best bid>,
