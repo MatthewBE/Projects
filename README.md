@@ -19,25 +19,18 @@ We will be loking at the BTC (Bitcoin) to US Dollar index Bid/Ask by sending the
 {  "event":"subscribed",  "feed":"ticker",  "product_ids":["PI_XBTUSD"] }
 
 
-This will return a JSON object with the following information (Example)
+This will return a JSON object with the following information:
+
 {
-  "time": 1612270825253,
-  "feed": "ticker",
-
-  "product_id": "PI_XBTUSD",
-
-  "bid": 34832.5,
-
-  "ask": 34847.5,
-
-  "bid_size": 42864,
-
-  "ask_size": 2300,
-
-  "volume": 262306237,
-
-  "dtm": 0,
-
+  "time": <  positive integer: 	The UTC time of the server in milliseconds>,
+  "feed": < string: 	The subscribed feed>,
+  "product_id": < string: The subscribed product (referred also as instrument or symbol)>,
+  "bid": <  positive float: 	The price of the current best bid>,
+  "ask": <positive float 	: The price of the current best ask >,
+  "bid_size": < positive float : The size of the current best bid>,
+  "ask_size": < positive float 	:The size of the current best ask>,
+  "volume": < positive float : The sum of the sizes of all fills observed in the last 24 hours>,
+  "dtm": <  positive integer 	: The days until maturity>,
   "leverage": "50x",
 
   "index": 34803.45,
@@ -74,9 +67,11 @@ This will return a JSON object with the following information (Example)
  
  
 More documentation about the product ID's can be found here:
+
 https://support.kraken.com/hc/en-us/articles/360022835891-Ticker-symbols
 
 ## Problem outline
+
 
 
 
