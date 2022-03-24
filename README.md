@@ -16,13 +16,8 @@ wss://futures.kraken.com/ws/v1
 We will be loking at the BTC (Bitcoin) to US Dollar index Bid/Ask by sending the websocket endpoint the following:
 
 
-{  
-    "event":"subscribed",
-    "feed":"ticker",
-    "product_ids":[  
-        "PI_XBTUSD"
-    ]
-}
+{  "event":"subscribed",  "feed":"ticker",  "product_ids":["PI_XBTUSD"] }
+
 
 This will return a JSON object with the following information (Example)
 {
