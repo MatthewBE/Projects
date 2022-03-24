@@ -14,6 +14,8 @@ The websocket API is public with the endpoint located here:
 wss://futures.kraken.com/ws/v1
 
 We will be loking at the BTC (Bitcoin) to US Dollar index Bid/Ask by sending the websocket endpoint the following:
+
+
 {  
     "event":"subscribed",
     "feed":"ticker",
