@@ -15,15 +15,15 @@ wss://futures.kraken.com/ws/v1
 
 We will be loking at the BTC (Bitcoin) to US Dollar index Bid/Ask by sending the websocket endpoint the following:
 
-
+```json
 {  "event":"subscribed",  "feed":"ticker",  "product_ids":[  "PI_XBTUSD"  ]   }
-
+```
 
 This will return a JSON object with the following information:
-
+```json
 {  
-  "time": <  positive integer: 	The UTC time of the server in milliseconds>,  
-  "feed": < string: 	The subscribed feed>,  
+  "time": "positive integer: 	The UTC time of the server in milliseconds",  
+  "feed": "string: 	The subscribed feed",  
   "product_id": < string: The subscribed product (referred also as instrument or symbol)>,  
   "bid": <  positive float: 	The price of the current best bid>,  
   "ask": <positive float 	: The price of the current best ask >,  
@@ -33,37 +33,33 @@ This will return a JSON object with the following information:
   "dtm": <  positive integer 	: The days until maturity>,  
   "leverage": < 	string: The leverage of the product>,  
   "index": < 	positive float: 	The real time index of the product>,    
+  "premium": < 	float: The premium associated with the product>,  
+  "last": < 	positive float: The price of the last trade of the product>,  
+  "change": < float :	The 24h change in price>,  
+  "funding_rate": < 	string: 	True if the market is suspended, false otherwise >,  
 
-  "premium": 0.1,
+  "funding_rate_prediction": <>,  
 
-  "last": 34852,
+  "suspended": <>,  
 
-  "change": 2.995109121267192,
+  "tag": <>,  
 
-  "funding_rate": 3.891007752e-9,
+  "pair": <>,  
 
-  "funding_rate_prediction": 4.2233756e-9,
-
-  "suspended": false,
-
-  "tag": "perpetual",
-
-  "pair": "XBT:USD",
-
-  "openInterest": 107706940,
+  "openInterest": <>,  
 
   "markPrice": 34844.25,
 
-  "maturityTime": 0,
+  "maturityTime": <>,  
 
-  "relative_funding_rate": 0.000135046879166667,
+  "relative_funding_rate": <>,  
 
-  "relative_funding_rate_prediction": 0.000146960125,
+  "relative_funding_rate_prediction": <>,  
 
-  "next_funding_rate_time": 1612281600000
+  "next_funding_rate_time": <>  
 
 } 
- 
+``` 
  
 More documentation about the product ID's can be found here:
 
