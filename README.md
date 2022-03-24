@@ -1,12 +1,15 @@
-## Hello
+## Kafka + Flink + Postgres 
 
-## Projects
-Collection of Personal and Academic Data and Software Development Projects. 
-The focus areas are broken down as follows:
+## Project: Binance Crypto Exchange Anomaly Detection
+The outline of this project is to create a portable and idempotent ETL architecture that includes:
 
-- ML: Basic "from Scratch" and modified ML Algos
-- Visualization: D3.js
-- Server: Backend Web node.js/express
+- CI/CD + testing
+- logging
+- Monitoring
+- Data validation and Quality Checks
+
+## Problem outline
+
 - API : devleoping API based on https://swagger.io/specification/ standard
 
 
