@@ -16,24 +16,23 @@ wss://futures.kraken.com/ws/v1
 We will be loking at the BTC (Bitcoin) to US Dollar index Bid/Ask by sending the websocket endpoint the following:
 
 
-{  "event":"subscribed",  "feed":"ticker",  "product_ids":["PI_XBTUSD"] }
+{  "event":"subscribed",  "feed":"ticker",  "product_ids":[  "PI_XBTUSD"  ]   }
 
 
 This will return a JSON object with the following information:
 
-{
+{  
   "time": <  positive integer: 	The UTC time of the server in milliseconds>,  
   "feed": < string: 	The subscribed feed>,  
   "product_id": < string: The subscribed product (referred also as instrument or symbol)>,  
-  "bid": <  positive float: 	The price of the current best bid>,
-  "ask": <positive float 	: The price of the current best ask >,
-  "bid_size": < positive float : The size of the current best bid>,
-  "ask_size": < positive float 	:The size of the current best ask>,
-  "volume": < positive float : The sum of the sizes of all fills observed in the last 24 hours>,
-  "dtm": <  positive integer 	: The days until maturity>,
-  "leverage": "50x",
-
-  "index": 34803.45,
+  "bid": <  positive float: 	The price of the current best bid>,  
+  "ask": <positive float 	: The price of the current best ask >,  
+  "bid_size": < positive float : The size of the current best bid>,  
+  "ask_size": < positive float 	:The size of the current best ask>,  
+  "volume": < positive float : The sum of the sizes of all fills observed in the last 24 hours>,  
+  "dtm": <  positive integer 	: The days until maturity>,  
+  "leverage": < 	string: The leverage of the product>,  
+  "index": < 	positive float: 	The real time index of the product>,    
 
   "premium": 0.1,
 
