@@ -52,7 +52,14 @@ This will return a JSON object with the following information contained in each 
 More documentation about the product ID's can be found here:  
 [Kraken Support](https://support.kraken.com/hc/en-us/articles/360022835891-Ticker-symbols)
 
-## Problem outline
+## ETL Overview 
+- Extract from the Kraken Websocket  
+  -Check the data types (Pylance)  
+  -Serialize and encode the data to UTF-8  
+  -Send the data to a Kafka consumer  
+  
+-Kafka 
+
 
 
 
