@@ -49,9 +49,8 @@ This will return a JSON object with the following information contained in each 
 } 
 ``` 
  
-More documentation about the product ID's can be found here:
-
-https://support.kraken.com/hc/en-us/articles/360022835891-Ticker-symbols
+More documentation about the product ID's can be found here:  
+[Kraken Support](https://support.kraken.com/hc/en-us/articles/360022835891-Ticker-symbols)
 
 ## Problem outline
 
