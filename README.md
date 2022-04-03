@@ -51,6 +51,7 @@ This will return a JSON object with the following information contained in each 
  
 More documentation about the product ID's can be found here:  
 [Kraken Support](https://support.kraken.com/hc/en-us/articles/360022835891-Ticker-symbols)
+[Full Websocket Pattern](https://support.kraken.com/hc/en-us/articles/360043283472-Python-WebSocket-recommended-Python-library-and-usage-examples)  
 
 ## ETL Overview 
 - Extract from the Kraken Websocket  
